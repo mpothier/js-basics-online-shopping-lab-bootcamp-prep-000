@@ -24,7 +24,7 @@ function viewCart() {
   }
   else if (cart.length > 1) {
     var strStart = [];
-    for (var i = 0; i < (cart.length)-1; i++) {
+    for (var i = 0; i < cart.length-1; i++) {
       strStart.push(`${cart[i].itemName} at $${cart[i].itemPrice}, `)
     }
     var strEnd = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
