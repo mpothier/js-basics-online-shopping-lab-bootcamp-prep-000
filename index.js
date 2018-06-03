@@ -15,10 +15,6 @@ function addToCart(item) {
   return `${item} has been added to your cart.`;
 }
 
-var cart = [
-  { itemName:"bananas", itemPrice: 17 }, { itemName:"pancake batter",itemPrice: 5 }, { itemName:"eggs", itemPrice: 49 }
-  ]
-
 function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
@@ -31,9 +27,7 @@ function viewCart() {
     for (var i = 0; i < (cart.length)-1; i++) {
       strStart.push(`${cart[i].itemName} at $${cart[i].itemPrice}, `)
     }
-    console.log(strStart)
     var strEnd = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
-    console.log(strEnd)
     return `In your cart, you have ${strStart.join("")}and ${strEnd}.`;
   }
 }
