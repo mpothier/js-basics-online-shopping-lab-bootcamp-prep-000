@@ -38,9 +38,9 @@ function total() {
   var totalCost = 0;
   for (var i=0; i < cart.length; i++) {
     totalCost += cart[i].itemPrice;
-    console.log(totalCost)
-    return totalCost;
   }
+  console.log(totalCost)
+  return totalCost;
 }
 
 total()
