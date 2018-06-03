@@ -32,8 +32,6 @@ function viewCart() {
   }
 }
 
-var cart = [ { itemName:"bananas", itemPrice: 17 }, { itemName:"pancake batter",itemPrice: 5 }, { itemName:"eggs", itemPrice: 49 }]
-
 function total() {
   var totalCost = 0;
   for (var i=0; i < cart.length; i++) {
@@ -41,8 +39,6 @@ function total() {
   }
   return totalCost;
 }
-
-total()
 
 function removeFromCart(item) {
   
