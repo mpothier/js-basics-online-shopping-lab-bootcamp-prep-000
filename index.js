@@ -32,8 +32,6 @@ function viewCart() {
   }
 }
 
-viewCart()
-
 function total() {
   
 }
