@@ -32,11 +32,13 @@ function viewCart() {
   }
 }
 
+var cart = [ { itemName:"bananas", itemPrice: 17 }, { itemName:"pancake batter",itemPrice: 5 }, { itemName:"eggs", itemPrice: 49 }]
+
 function total() {
-  var totalCost = 0
+  var totalCost = 0;
   for (var i=0; i < cart.length; i++) {
-    totalCost += cart[i].itemPrice
-    return totalCost
+    totalCost += cart[i].itemPrice;
+    return totalCost;
   }
 }
 
