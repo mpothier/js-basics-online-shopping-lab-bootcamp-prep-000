@@ -27,7 +27,6 @@ function viewCart() {
     console.log(cart[0].itemName)
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
-  debugger;
   else if (cart.length > 1) {
     var strStart = [];
     for (var i = 0; i < (cart.length)-1; i++) {
