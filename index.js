@@ -32,7 +32,7 @@ function viewCart() {
       strStart.push(`${cart[i].itemName} at $${cart[i].itemPrice}, `)
     }
     console.log(strStart)
-    var strEnd = `${cart[-1].itemName} at $${cart[-1].itemPrice}`;
+    var strEnd = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
     return `In your cart, you have ${strStart.join("")}and ${strEnd}.`;
   }
 }
