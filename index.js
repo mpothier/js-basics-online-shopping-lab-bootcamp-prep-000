@@ -41,11 +41,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var bool = 0
   for (var i=0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       cart.splice(i,1)
+      bool = 1
       return cart 
     }
+  }
+  if (bool === 0) {
+    return "That item is not in your cart."
   }
 }
 
