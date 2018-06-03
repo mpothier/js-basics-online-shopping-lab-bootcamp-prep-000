@@ -31,8 +31,8 @@ function viewCart() {
     for (var i = 0; i < (cart.length)-1; i++) {
       strStart.push(`${cart[i].itemName} at $${cart[i].itemPrice}, `)
     }
+    console.log(strStart)
     var strEnd = `${cart[-1].itemName} at $${cart[-1].itemPrice}`;
-    console.log(strEnd)
     return `In your cart, you have ${strStart.join("")}and ${strEnd}.`;
   }
 }
