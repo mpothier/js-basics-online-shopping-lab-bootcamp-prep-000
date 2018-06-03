@@ -33,6 +33,7 @@ function viewCart() {
     }
     console.log(strStart)
     var strEnd = `${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}`;
+    console.log(strEnd)
     return `In your cart, you have ${strStart.join("")}and ${strEnd}.`;
   }
 }
