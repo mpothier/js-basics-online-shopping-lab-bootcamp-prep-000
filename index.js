@@ -50,7 +50,7 @@ function removeFromCart(item) {
     }
   }
   if (bool === 0) {
-    return "That item is not in your cart."
+    return "That item is not in your cart.";
   }
 }
 
