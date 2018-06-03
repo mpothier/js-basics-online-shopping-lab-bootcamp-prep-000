@@ -16,7 +16,7 @@ function addToCart(item) {
 }
 
 var cart = [
-  {itemName:"bananas"
+  { itemName:"bananas", itemPrice: 17 }, { itemName:"pancake batter",itemPrice: 5 }, { itemName:"eggs", itemPrice: 49 }
   ]
 
 function viewCart() {
@@ -32,9 +32,12 @@ function viewCart() {
       strStart.push(`${cart[i].itemName} at $${cart[i].itemPrice}, `)
     }
     var strEnd = `${cart[-1].itemName} at $${cart[-1].itemPrice}`;
+    console.log(strEnd)
     return `In your cart, you have ${strStart.join("")}and ${strEnd}.`;
   }
 }
+
+viewCart()
 
 function total() {
   
